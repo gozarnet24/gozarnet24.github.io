@@ -1,0 +1,59 @@
+@import url("./fonts.scss");
+
+html {
+  direction: rtl;
+  font-family: "Yekan Bakh";
+}
+
+html body .crisp-client > div#crisp-chatbox > div > a {
+  transition: 250ms !important;
+}
+
+html.has-fixed-button body .crisp-client > div#crisp-chatbox > div > a {
+  bottom: 98px !important;
+  
+  @screen md {
+    bottom: 20px !important;
+  }
+}
+
+#__nuxt {
+  @screen md {
+    height: 100dvh;
+    display: flex;
+  }
+}
+
+.v-toast__icon {
+  display: none !important;
+}
+
+.v-toast__item {
+  padding: 12px 20px !important;
+  min-height: unset !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+
+.v-toast__item--error {
+  background: #FFF1F1 !important;
+
+  .v-toast__text {
+    color: #f42c2c !important;
+  }
+}
+
+.v-toast {
+  margin-top: 30px !important;
+
+  @screen md {
+    margin-top: 10px !important;
+  }
+}
+
+.v-toast__text {
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 21.7px !important;
+}
